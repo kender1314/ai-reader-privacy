@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>启路阅读器 隐私权政策</title>
+  <meta name="description" content="启路阅读器 Chrome 扩展的隐私权政策，说明本扩展如何处理、存储和共享用户数据。">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #5b6472;
+      --line: #e5e9f0;
+      --accent: #2563eb;
+      --accent-soft: #eff6ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 32px 16px 64px;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    }
+
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    header, main, footer {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin-bottom: 18px;
+    }
+
+    header {
+      border-top: 4px solid var(--accent);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.3;
+    }
+
+    h2 {
+      margin: 32px 0 12px;
+      font-size: 20px;
+      line-height: 1.4;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2:first-of-type { margin-top: 8px; }
+
+    h3 {
+      margin: 20px 0 8px;
+      font-size: 17px;
+    }
+
+    p, ul, ol { margin: 10px 0; }
+
+    ul, ol { padding-left: 24px; }
+
+    li { margin: 6px 0; }
+
+    a { color: var(--accent); }
+
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .note {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin: 18px 0;
+    }
+
+    .kv {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0;
+      font-size: 15px;
+    }
+
+    .kv th, .kv td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .kv th {
+      width: 34%;
+      background: #fafbfc;
+      font-weight: 600;
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 16px 10px 40px; }
+      header, main, footer { padding: 20px 18px; border-radius: 10px; }
+      h1 { font-size: 23px; }
+      .kv th, .kv td { display: block; width: 100%; }
+      .kv th { border-bottom: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>启路阅读器 隐私权政策</h1>
+      <p class="meta">生效日期：2026 年 11 月 16 日　|　最后更新：2026 年 11 月 16 日</p>
+      <p>
+        本隐私权政策适用于在 Chrome 网上应用店发布的「启路阅读器」浏览器扩展（Manifest V3）
+        及其相关功能。本扩展的单一用途是：帮助用户阅读、搜索、整理和朗读其主动选择的书籍、书源与章节内容。
+      </p>
+      <div class="note">
+        简短说明：本扩展没有由开发者运营的账号系统或统计后端。你的书架、书源、章节缓存和设置默认保存在本机浏览器中，
+        不会上传给我们的服务器。只有当你主动配置书源、AI 接口或 HTTP 朗读接口时，相关内容才会按需发送给这些你指定的第三方服务。
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>一、数据控制者与联系方式</h2>
+        <table class="kv">
+          <tbody>
+            <tr>
+              <th>产品</th>
+              <td>启路阅读器（AI Reader）Chrome 扩展</td>
+            </tr>
+            <tr>
+              <th>开发者</th>
+              <td>启路阅读器开发团队（Gitee：chengdu_3）</td>
+            </tr>
+            <tr>
+              <th>联系渠道</th>
+              <td>
+                <a href="https://gitee.com/chengdu_3/ai-reader/issues" target="_blank" rel="noopener noreferrer">
+                  https://gitee.com/chengdu_3/ai-reader/issues
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          如果你对本政策或本扩展的数据处理行为有疑问、意见或删除请求，请通过上述渠道联系我们。
+        </p>
+      </section>
+
+      <section>
+        <h2>二、我们处理的数据</h2>
+        <p>
+          “用户数据”不仅指账号信息，也包括你在使用扩展时主动提供或由扩展为你处理的内容。本扩展处理的数据如下：
+        </p>
+
+        <h3>1. 本地保存的数据</h3>
+        <ul>
+          <li>书架信息：书名、作者、封面地址、来源地址、阅读进度等。</li>
+          <li>书源配置：你添加、导入或启用的书源规则及书源元数据。</li>
+          <li>章节缓存：你打开或朗读过的章节正文，用于离线继续阅读与减少重复请求。</li>
+          <li>偏好设置：界面语言、主题、字号、朗读音色、语速、多角色朗读设置等。</li>
+          <li>可选服务配置：你主动填写的 AI 接口地址、模型名、API Key，以及 HTTP 朗读接口模板。</li>
+        </ul>
+        <p>
+          上述数据通过浏览器的 <code>chrome.storage.local</code> 等本地存储能力保存在你的设备中，
+          我们不会将其上传到开发者服务器。你可以随时在扩展内清理书源、缓存或设置，也可以通过卸载扩展并清除浏览器扩展数据来删除这些数据。
+        </p>
+
+        <h3>2. 你配置的书源产生的数据</h3>
+        <p>
+          当你使用全网搜索、目录加载或章节阅读时，扩展会按照你启用或配置的书源规则，向对应网站发起网络请求。
+          这些请求可能包含你输入的搜索关键词、书名、书源地址、章节地址以及必要的请求头。
+        </p>
+        <p>
+          这些书源由第三方运营，不是我们的服务。对方可能在其服务器日志中看到你的 IP 地址、请求时间和请求内容，
+          并适用其自身的隐私权政策。我们不会集中收集这些搜索或阅读记录。
+        </p>
+
+        <h3>3. AI 角色识别（可选功能）</h3>
+        <p>
+          本扩展提供可选的 AI 角色识别功能，用于改善多角色朗读效果。该功能默认不启用。
+          只有当你主动开启、填写 OpenAI 兼容接口地址、模型名及必要的 API Key 后，扩展才会把章节文本片段、
+          提示词和模型配置发送给你所指定的 AI 服务提供方。
+        </p>
+        <p>
+          API Key 仅保存在本地，并随请求发送给你自己配置的接口，不会发送给我们的服务器。
+          如果你不希望文本发送至第三方 AI 服务，请关闭该功能；关闭后，扩展仍可使用本地规则进行基础角色判断。
+        </p>
+
+        <h3>4. HTTP 朗读接口（可选功能）</h3>
+        <p>
+          如果你主动启用 HTTP 朗读接口并配置 URL 模板，扩展会把需要朗读的文本片段编码进请求并发送给你指定的接口，
+          以获取语音音频。未启用时，扩展使用浏览器或操作系统提供的语音合成能力。
+        </p>
+
+        <h3>5. 浏览器或操作系统语音服务</h3>
+        <p>
+          当你选择浏览器或操作系统提供的在线音色时，需要朗读的文本会由相应的浏览器或平台语音服务处理。
+          这些服务受 Google、Microsoft 或你的操作系统供应商的隐私政策约束，不由本扩展控制。
+        </p>
+      </section>
+
+      <section>
+        <h2>三、我们如何使用数据</h2>
+        <p>我们仅将上述数据用于实现扩展的单一用途，包括：</p>
+        <ul>
+          <li>展示和管理你的书架、书源与阅读进度；</li>
+          <li>按你的指令搜索、抓取和整理你选择的书籍内容；</li>
+          <li>缓存已阅读章节以提升加载速度和离线阅读体验；</li>
+          <li>提供朗读、语速调节和多角色朗读；</li>
+          <li>在你主动开启相关功能时，调用你配置的 AI 或 HTTP 朗读服务；</li>
+          <li>排查故障、维护兼容性和保障扩展安全稳定运行。</li>
+        </ul>
+        <p>
+          我们不会将你的数据用于个性化广告、出售给数据经纪商、信用评估或任何与本扩展单一用途无关的目的。
+        </p>
+      </section>
+
+      <section>
+        <h2>四、数据共享与第三方</h2>
+        <p>我们不会把你的本地数据主动共享给第三方。以下情况除外：</p>
+        <ul>
+          <li><strong>你配置的书源：</strong>为完成你发起的搜索或阅读请求，扩展会访问对应网站。</li>
+          <li><strong>你配置的 AI 服务：</strong>仅在你开启 AI 角色识别后，发送必要的章节文本片段和配置。</li>
+          <li><strong>你配置的 HTTP 朗读接口：</strong>仅在你开启后，发送需要朗读的文本片段。</li>
+          <li><strong>浏览器/操作系统语音服务：</strong>使用在线音色时，由平台处理朗读文本。</li>
+          <li><strong>法律要求：</strong>在适用法律明确要求时，我们可能依法披露必要信息。</li>
+        </ul>
+        <p>
+          第三方服务的隐私实践由其各自政策约束。请在启用相关功能前自行了解并决定是否使用。
+        </p>
+      </section>
+
+      <section>
+        <h2>五、权限说明</h2>
+        <table class="kv">
+          <tbody>
+            <tr>
+              <th>storage / unlimitedStorage</th>
+              <td>用于在本地保存书架、书源、章节缓存、偏好设置和可选服务配置。</td>
+            </tr>
+            <tr>
+              <th>alarms</th>
+              <td>用于扩展内部的定时任务，例如本地维护任务；不用于收集浏览记录。</td>
+            </tr>
+            <tr>
+              <th>offscreen</th>
+              <td>用于在后台页面中实现朗读能力，尤其是浏览器 Service Worker 无法直接使用 DOM 的场景。</td>
+            </tr>
+            <tr>
+              <th>host_permissions（http / https）</th>
+              <td>用于访问你主动配置的书源域名、AI 接口或 HTTP 朗读接口。我们不使用该权限收集你的网页浏览历史，也不注入第三方网页。</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          我们遵循最小权限原则，仅申请实现上述功能所必需的权限。
+        </p>
+      </section>
+
+      <section>
+        <h2>六、数据保留与删除</h2>
+        <ul>
+          <li>本地数据保留在你的设备上，直到你主动清理或卸载扩展。</li>
+          <li>我们不为这些数据设置服务器端保留期限，因为我们不运营收集这些数据的服务器。</li>
+          <li>你可以通过扩展设置清理书源、章节缓存和相关配置，也可以通过浏览器的扩展管理页面卸载扩展并清除其数据。</li>
+          <li>卸载扩展不会自动删除第三方书源网站、AI 服务或语音服务在其系统中可能记录的日志；如需删除，请联系相应服务提供方。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>七、数据安全</h2>
+        <p>
+          本扩展依赖 Chrome 扩展平台的本地存储隔离机制保护你的本地数据。
+          当使用网络功能时，建议只在可信书源和可信 AI/HTTP 接口中填写信息，并优先使用 HTTPS 地址。
+          我们无法控制第三方服务如何处理其接收到的数据。
+        </p>
+      </section>
+
+      <section>
+        <h2>八、儿童隐私</h2>
+        <p>
+          本扩展并非面向未满 13 周岁儿童（或当地法律规定年龄以下的儿童）设计，
+          我们不会明知地收集儿童的个人信息。如果你认为儿童向我们提供了个人信息，请通过上面的联系方式告知我们。
+        </p>
+      </section>
+
+      <section>
+        <h2>九、政策变更</h2>
+        <p>
+          当本扩展的功能或数据处理方式发生变化时，我们可能会更新本政策，并在此页面公布新的生效日期或更新日期。
+          重大变更还会通过扩展内提示或商店页面说明进行显著告知。
+        </p>
+      </section>
+
+      <section>
+        <h2>十、接受与联系我们</h2>
+        <p>
+          使用本扩展即表示你已阅读并理解本隐私权政策。如果你不接受本政策，请停止使用并卸载本扩展。
+          如需联系我们，请访问：
+          <a href="https://gitee.com/chengdu_3/ai-reader/issues" target="_blank" rel="noopener noreferrer">
+            https://gitee.com/chengdu_3/ai-reader/issues
+          </a>。
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 启路阅读器开发团队。本政策最后更新于 2026 年 11 月 16 日。</p>
+    </footer>
+  </div>
+</body>
+</html>
